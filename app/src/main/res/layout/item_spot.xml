@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/spotImg"
+            android:layout_width="372dp"
+            android:layout_height="135dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/xcvcv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/spotName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="성남공원"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/spotImg"
+            app:layout_constraintEnd_toEndOf="@+id/spotImg"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="@+id/spotImg"
+            app:layout_constraintTop_toTopOf="@+id/spotImg"
+            app:layout_constraintVertical_bias="0.129" />
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/spotImg"
+            app:layout_constraintEnd_toEndOf="@+id/spotImg"
+            app:layout_constraintHorizontal_bias="0.122"
+            app:layout_constraintStart_toStartOf="@+id/spotImg"
+            app:layout_constraintTop_toTopOf="@+id/spotImg"
+            app:layout_constraintVertical_bias="0.888">
+
+            <ImageView
+                android:id="@+id/reviewImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/edit" />
+
+            <TextView
+                android:id="@+id/reviewCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+                android:textColor="@color/white" />
+
+            <ImageView
+                android:id="@+id/favoriteImage"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/bookmark" />
+
+            <TextView
+                android:id="@+id/favoriteCountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="0"
+
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout7"
+            android:layout_width="294dp"
+            android:layout_height="22dp"
+            android:layout_marginEnd="56dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.642"
+            app:layout_constraintStart_toStartOf="@+id/spotImg"
+            app:layout_constraintTop_toTopOf="@+id/spotImg"
+            app:layout_constraintVertical_bias="0.53">
+
+            <ImageView
+                android:id="@+id/markerImage"
+                android:layout_width="26dp"
+                android:layout_height="22dp"
+                android:src="@drawable/maps_and_flags__1_" />
+
+            <TextView
+                android:id="@+id/spotLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="10dp"
+                android:text="경기도 성남시 성남동 12-8"
+                android:textColor="@color/white"
+
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="77dp"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="@+id/spotImg"
+            app:layout_constraintEnd_toEndOf="@+id/spotImg"
+            app:layout_constraintHorizontal_bias="0.938"
+            app:layout_constraintStart_toStartOf="@+id/spotImg"
+            app:layout_constraintTop_toTopOf="@+id/spotImg"
+            app:layout_constraintVertical_bias="0.133">
+
+            <ImageView
+                android:id="@+id/RatingImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/star__2_" />
+
+            <TextView
+                android:id="@+id/spotRatingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

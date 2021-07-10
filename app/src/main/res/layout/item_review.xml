@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.372"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/userProfile"
+                android:layout_width="53dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/user" />
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userNickNameText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="환경설정" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="79dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="" />
+
+                <TextView
+                    android:id="@+id/createDateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2021-06-30" />
+
+            </LinearLayout>
+
+            <View
+
+                android:layout_width="0dp"
+
+                android:layout_height="0dp"
+
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:id="@+id/optionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="&#8942;"
+                android:textSize="30dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/reviewContentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:text="나쁘지는 않네여 ㅎㅎ" />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+        </LinearLayout>
+        <View
+
+            android:layout_width="match_parent"
+
+            android:layout_height="1dp"
+            android:background="#48808080"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="351dp"
+            android:layout_height="39dp"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginTop="10dp"
+                android:text="이 리뷰가 도움이 되었나요?" />
+
+            <View
+
+                android:layout_width="0dp"
+
+                android:layout_height="0dp"
+
+                android:layout_weight="1"
+
+                />
+
+            <Button
+                android:id="@+id/thumbButton"
+                android:layout_width="68dp"
+                android:layout_height="37dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/white"
+                android:drawableLeft="@drawable/like_carrot"
+                android:scaleType="centerInside"
+                android:text="0"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

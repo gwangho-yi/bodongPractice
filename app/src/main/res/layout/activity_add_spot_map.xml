@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/mapBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/white"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/abc_vector_test" />
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:hint="스팟 위치 검색"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="686dp"
+        tools:layout_editor_absoluteY="45dp">
+
+
+
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+
+
+
+        <ImageView
+            android:id="@+id/markerView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            app:srcCompat="@drawable/maps_and_flags__1_" />
+
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:textColor="#808080"
+            android:textSize="18dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="주소" />
+
+        <FrameLayout
+            android:id="@+id/searchFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="682dp"
+            android:background="@color/white"
+            android:visibility="gone"
+            tools:layout_editor_absoluteY="49dp">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylcerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/locationAddButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal|bottom"
+            android:text="이 위치 설정하기" />
+
+
+    </FrameLayout>
+
+
+
+
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

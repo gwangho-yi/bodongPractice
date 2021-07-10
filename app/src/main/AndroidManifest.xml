@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bodongpractice">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BodongPractice"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".MyFavorite"></activity>
+        <activity android:name=".GroupDetail" />
+        <activity android:name=".AddGroupLocationSearch" />
+        <activity android:name=".AddGroupCategory" />
+        <activity android:name=".AddGroup" />
+        <activity android:name=".MapSearch" />
+        <activity android:name=".LocationSearch" />
+        <activity android:name=".EditReview" />
+        <activity android:name=".AllReview" />
+        <activity android:name=".AddReview" />
+        <activity android:name=".DeleteTest" />
+        <activity android:name=".EditSpot" />
+        <activity
+            android:name=".SpotDetail"
+            android:label="@string/title_activity_spot_detail" />
+        <activity android:name=".Test" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".AddSpotMap" />
+        <activity android:name=".AddSpot" />
+        <activity android:name=".Intro" />
+        <activity android:name=".ProfileChange" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PasswordChange" />
+        <activity android:name=".SendEmailCode" />
+        <activity android:name=".FindPassword" />
+        <activity android:name=".Register" />
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.bodongpractice.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:tint="@color/black"
+            app:srcCompat="@drawable/abc_vector_test" />
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:text="비밀번호 재설정" />
+
+
+
+    </LinearLayout>
+
+    <View
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+
+
+        android:background="#808080" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

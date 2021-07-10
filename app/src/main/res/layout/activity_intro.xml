@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E67A00"
+    tools:context=".Intro">
+
+    <TextView
+        android:id="@+id/skateText"
+        android:layout_width="159dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="312dp"
+        android:text="보동보동"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/skateImage" />
+
+    <ImageView
+        android:id="@+id/skateImage"
+        android:layout_width="133dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="208dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logomakr_8v9sxr" />
+</androidx.constraintlayout.widget.ConstraintLayout>
